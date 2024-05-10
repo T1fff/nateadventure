@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: rgba(119, 91, 217, 1); /* #775bd9 */
+  --color-secondary: rgba(85, 219, 158, 1); /* #55db9e */
+  --color-dark: rgba(3, 10, 73, 1); /* #030a49 */
+  --color-light: rgba(203, 205, 212, 1); /* #cbcdd4 */
+  --color-accent: rgba(217, 91, 169, 1); /* #d95ba9 */
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: justify;
+}
+
+.btn-download:hover {
+  background-color: var(--color-dark);
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+.container p {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* Estilos de encabezado */
+header {
+  background-color: #02062d;
+  display: grid;
+  place-content: center;
+  padding: 20px 0;
+  text-align: center;
+  height: 90vh;
+}
+
+header h1 {
+  margin: 0 auto;
+  font-size: 10rem;
+  margin-bottom: 3rem;
+
+  width: 90%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  padding: 1rem;
+  background: rgba(217, 91, 169, 0.4);
+  border-radius: 0px;
+  transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+  background: rgba(217, 91, 169, 0.9);
+  animation: scale(1.1);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos de secciones */
+section {
+  text-align: center;
+}
+
+section h2 {
+  color: #333;
+}
+
+/* Estilos de pie de página */
+footer {
+  background-color: #02062d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section_aboutus,
+.download {
+  background-color: var(--color-dark);
+  text-align: center;
+  padding: 20px 0;
+  display: grid;
+  place-content: center;
+  height: 70vh;
+  margin-bottom: 3rem;
+}
+
+.section_aboutus_h2 {
+  color: #fff;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.stand-image {
+  display: block;
+  margin: 20px auto; /* Ajusta el margen según sea necesario */
+  width: 140px; /* Establece el ancho deseado */
+  height: 140px; /* Establece la altura deseada */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+  border-radius: 50%; /* Esto hace que la imagen sea redonda */
+  border: 4px solid var(--color-accent); /* Añade un borde de 3px de grosor y color negro */
+}
